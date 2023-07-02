@@ -94,5 +94,50 @@ header{
 .photo{
     background-color: #3C3C3C;
     height: 892px;
+    margin-top: 90px;
 }
 
+.corusel{  
+    width: 100%;
+    text-align: center;
+  }
+
+.photo-title{  
+    padding-top: 90px;
+    padding-bottom: 60px;
+    color: white;
+  }
+  
+.corusel img{  
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.slider-for{
+    margin-bottom: 25px;
+}
+
+.slider-for img{
+    vertical-align:super;
+    box-shadow: 0px 5px 10px 0px #00000080;
+}
+
+.slider-nav{
+    display: inline-block;
+    width: 1117px;
+}
+
+.slick-prev:before {
+    content: url("/static/img/arrow_left.svg");
+    color: white;
+    position: relative;
+    right: 37px;
+    bottom: 15px;
+  }
+  
+.slick-next:before {
+    content: url("/static/img/arrow_right.svg");
+    color: white;
+    position: relative;
+    bottom: 15px;
+  }
