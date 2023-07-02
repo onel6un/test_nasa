@@ -1,0 +1,20 @@
+{% load static %}
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-2 h-100 d-flex align-items-center justify-content-start">
+            <a href="{% url "main:index" %}">
+                <img src="{% static "img/nasa.svg" %}" alt="NASA" class="header-logo">
+            </a>
+        </div>
+        <div class="col-8 d-flex align-items-center justify-content-center">
+            <span class="nav"><a href="#" class="nav-link">Преимущества</a></span>
+            <span class="nav"><a href="#" class="nav-link">Фотографии</a></span>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+            <button class="header-btn">
+                <a href="#" class="header-btn-link">Вход</a>
+            </button>
+        </div>
+    </div>
+</div>
+

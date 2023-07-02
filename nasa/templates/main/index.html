@@ -1,7 +1,49 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
   NASA
 {% endblock %}
-{% block contend %}
-  
+{% block slider_head %}
+  <link rel="stylesheet" type="text/css" href="{% static "slick/slick.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "slick/slick-theme.css" %}">
+{% endblock %}
+{% block content %}
+  <section class="advantages">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center space-agency">
+                <h1 class="space-agency-title">Космическое агентство</h1>
+                <h2 class="space-agency-subtitle">Национальное управление по аэронавтике и исследованию космического пространства — ведомство, относящееся к федеральному правительству <br>США и подчиняющееся непосредственно президенту США.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 d-flex flex-column">
+                <div class="space-blocks">
+                    <div><img src="{% static "img/shuttle.svg" %}" alt="shuttle" class="space-blocks-icons"></div>
+                    <div><p class="space-blocks-text">Спейс шаттлы —<br>пилотируемые корабли</p></div>
+                </div>
+                <div class="space-blocks">
+                    <div><img src="{% static "img/moon.svg" %}" alt="moon" class="space-blocks-icons"></div>
+                    <div><p class="space-blocks-text">Целимся на Луну<br>и Марс</p></div>
+                </div>
+            </div>   
+            <div class="col-3 d-flex flex-column">    
+                <div class="space-blocks">
+                    <div><img src="{% static "img/telescope.svg" %}" alt="telescope" class="space-blocks-icons"></div>
+                    <div><p class="space-blocks-text">Лучшее телескопическое <br>оборудование</p></div>
+                </div>
+                <div class="space-blocks">
+                    <div><img src="{% static "img/medal.svg" %}" alt="telescope" class="space-blocks-icons"></div>
+                    <div><p class="space-blocks-text">Золотая медаль <br>по научным исследованиям</p></div>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <img src="{% static "img/foto-space.svg" %}" alt="space" class="img-space"> 
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="photo">
+    
+  </main>
 {% endblock %}
