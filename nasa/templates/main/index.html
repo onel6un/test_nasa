@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3 d-flex flex-column">
+            <div class="col-6 col-xl-3 d-flex flex-column align-items-center">
                 <div class="space-blocks">
                     <div><img src="{% static "img/shuttle.svg" %}" alt="shuttle" class="space-blocks-icons"></div>
                     <div><p class="space-blocks-text">Спейс шаттлы —<br>пилотируемые корабли</p></div>
@@ -29,7 +29,7 @@
                     <div><p class="space-blocks-text">Целимся на Луну<br>и Марс</p></div>
                 </div>
             </div>   
-            <div class="col-3 d-flex flex-column">    
+            <div class="col-6 col-xl-3 d-flex flex-column align-items-center">    
                 <div class="space-blocks">
                     <div><img src="{% static "img/telescope.svg" %}" alt="telescope" class="space-blocks-icons"></div>
                     <div><p class="space-blocks-text">Лучшее телескопическое <br>оборудование</p></div>
@@ -39,7 +39,7 @@
                     <div><p class="space-blocks-text">Золотая медаль <br>по научным исследованиям</p></div>
                 </div>
             </div>
-            <div class="col-6 d-flex justify-content-center">
+            <div class="col-12 col-xl-6 d-flex justify-content-center">
                 <img src="{% static "img/foto-space.svg" %}" alt="space" class="img-space"> 
             </div>
         </div>
@@ -55,7 +55,7 @@
               <a data-fancybox="gallery" href="{{ im.url }}">
             {% endthumbnail %}
               {% thumbnail slide.image "750x420" crop="center" upscale=True as im %}
-                <img src="{{ im.url }}" />
+                <img src="{{ im.url }}"/>
               {% endthumbnail %}
               </a>
           </div>
@@ -64,7 +64,7 @@
       <div class="slider-nav">
         {%for slide in slides%}
           {% thumbnail slide.image "165x165" crop="center" upscale=True as im %}
-            <div><img src="{{ im.url }}"></div>
+            <div><img src="{{ im.url }}""></div>
           {% endthumbnail %}
         {%endfor%}
       </div>
