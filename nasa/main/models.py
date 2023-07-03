@@ -1,13 +1,15 @@
 from django.db import models
 from django.utils.safestring import mark_safe
+from filer.fields.image import FilerImageField
 
 
 class Slide(models.Model):
     title = models.CharField(max_length=100, blank=False, null=False)
-    image = models.ImageField(
-        'Картинка',
-        upload_to='slider/',
-        blank=True
+    image = FilerImageField(
+        null=True,
+        blank=True,
+        related_name="slide_image",
+        on_delete=models.CASCADE
     )
     order = models.PositiveIntegerField(
         default=0,

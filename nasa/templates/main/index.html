@@ -53,10 +53,8 @@
           <div>
             {% thumbnail slide.image "1240x768" crop="center" upscale=True as im %}
               <a data-fancybox="gallery" href="{{ im.url }}">
-            {% endthumbnail %}
               {% thumbnail slide.image "750x420" crop="center" upscale=True as im %}
                 <img src="{{ im.url }}"/>
-              {% endthumbnail %}
               </a>
           </div>
         {%endfor%}
@@ -65,7 +63,6 @@
         {%for slide in slides%}
           {% thumbnail slide.image "165x165" crop="center" upscale=True as im %}
             <div><img src="{{ im.url }}""></div>
-          {% endthumbnail %}
         {%endfor%}
       </div>
 

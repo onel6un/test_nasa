@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'sorl.thumbnail',
+    'easy_thumbnails',
+    'filer',
+    'mptt',
     'adminsortable2',
 ]
 
